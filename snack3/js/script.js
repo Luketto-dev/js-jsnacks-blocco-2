@@ -3,17 +3,23 @@
 
 let listaNumeri = [];
 
-for (let i = 0; i < 10; i++) {
-    numeroCasuale = Math.floor(Math.random() * 10) ;
+let sommaNumeri = 0
 
+for (let i = 0; i < 10; i++) {
+    numeroCasuale = Math.floor(Math.random() * 100) ;
     listaNumeri.push(numeroCasuale)
 
-    if (i % 2 == 0) {
-        numeroCasuale += numeroCasuale;
-        console.log(listaNumeri)
-    }
-
+    console.log(listaNumeri);
     
+
+    if (i % 2 !== 0) {
+        sommaNumeri += numeroCasuale
+    }
+ 
 }
+
+console.log(sommaNumeri);
+
+
 
 
